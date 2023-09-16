@@ -1,5 +1,6 @@
-package application;
+package quinto_gof.app;
 
+import quinto_gof.facade.Facade;
 import quinto_gof.singleton.EagerSingleton;
 import quinto_gof.singleton.LazySingleton;
 import quinto_gof.singleton.SingletonLazyHolder;
@@ -46,6 +47,11 @@ public class Test {
 		robo.move();
 		robo.move();
 		robo.move();
+		
+		// Testing Facade design pattern:
+		
+		Facade facade = new Facade();
+		facade.migrateCustomer("Jonathan", "14801788");
 	}
 
 }
